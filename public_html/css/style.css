@@ -1,2 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900');
+
+/* ---- global styles ---- */
+
+body {
+    color: #464B4F;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social>li:first-of-type>iframe:first-of-type {
+    display: none;
+}
 
 
+/* ---- upper header styles ---- */
+
+.upper-header ul {
+    margin-bottom: 0;
+}
+
+.upper-header p {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.upper-header .social {
+    margin-top: 5px;
+}
+
+.upper-header .upper-links {
+    margin-top: 5px;
+}
+
+.upper-header .upper-links a {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 12px;
+    color: #464B4F;
+}
+
+.upper-header .upper-links a:hover {
+    color: #28A44A;
+    text-decoration: none;
+}
+
+.upper-header .upper-links li:nth-of-type(3) a {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0 10px 0 25px;
+    background: url(assets/link-icon.png) 10px center no-repeat;
+    background-color: #28A44A;
+}
+
+
+/* ---- header banner styles ---- */
+
+.header-banner {
+    background-color: #28A44A;
+    margin-top: 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1c7a35;
+}
+
+.header-banner img {
+    width: 430px;
+    max-width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: block;
+}
+
+.header-banner .marquee {
+    max-width: 520px;
+    color: #fff;
+    font-weight: 300;
+    margin: 10px auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/* ---- lower header styles ---- */
+
+.lower-header .container {
+    position: relative;
+}
+
+.lower-header .navbar-default {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #28A44A;
+    border-top: 1px solid #31c257;
+    border-bottom: 1px solid #1c7a35;
+}
+
+.lower-header .navbar-default .navbar-nav li a:hover, .lower-header .navbar-default .navbar-nav li a:focus {
+    background-color: #31C257;
+}
+
+.lower-header .navbar-default .navbar-nav li:last-of-type a:hover {
+    background-color: #31C257;
+}
+
+.lower-header .navbar-default .navbar-nav li:last-of-type a {
+    background-color: #B42410;
+}
+
+.lower-header .navbar-default .navbar-nav li>a {
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    padding: 0 4px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lower-header .colors {
+    border-top: 1px solid #31c257;
+    height: 4px;
+    background: url(assets/colors.png) repeat-y;
+}
+
+.lower-header .dropdown-control .fa {
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    margin-left: 10px;
+    border: 2px solid #fff;
+}
+
+.lower-header .dropdown-list {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #28A44A;
+    font-size: 12px;
+}
+
+.lower-header .dropdown-control .dropdown-list li {
+    border: none;
+}
+
+.lower-header .dropdown-list li:last-of-type {
+    background-color: #B42410;
+}
+
+.lower-header .dropdown-control .dropdown-list li a {
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    font-size: 12px;
+}
+
+.lower-header .dropdown-control .dropdown-list li:hover, .lower-header .dropdown-control .dropdown-list li:focus {
+    background-color: #31C257;
+}
+
+.lower-header .dropdown-list a:hover {
+    text-decoration: none;
+}
+
+.lower-header .navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.lower-header .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.lower-header .navbar-default .navbar-toggle:hover, .lower-header .navbar-default .navbar-toggle:focus {
+    border-color: transparent;
+    background-color: #fff;
+}
+
+.lower-header .navbar-default .navbar-toggle:hover .icon-bar, .lower-header .navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #28A44A;
+}
+
+.lower-header .navbar-default .navbar-brand {
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+.lower-header .navbar-default .navbar-brand img {
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.lower-header .navbar-default .navbar-collapse {
+    border: 0;
+    box-shadow: 0;
+    padding-top: 25px;
+}
