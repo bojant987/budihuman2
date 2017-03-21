@@ -321,6 +321,7 @@
     }
     .counter-bar form {
         display: inline-block;
+        float: right;
     }
     /* ---- index page styles ---- */
     /* ---- ASIDE styles ---- */
