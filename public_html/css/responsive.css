@@ -134,6 +134,14 @@
     footer .info-group {
         margin-right: 20px;
     }
+    /* ---- children header styles ---- */
+    /* ---- child article styles ---- */
+    .child-article .slider-title {
+        top: 55px;
+    }
+    .child-article .slider-title p {
+        color: #fff;
+    }
 }
 
 @media (min-width: 992px) {
@@ -258,18 +266,29 @@
     footer .footer-nav+img {
         float: right;
     }
+    /* ---- children header styles ---- */
+    /* ---- child article styles ---- */
+    .child-article .child-donation li {
+        padding: 15px 10px;
+    }
+    .child-article .child-donation li:nth-of-type(4) {
+        padding: 15px 5px;
+    }
+    .child-article .child-donation li p:nth-of-type(3) {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 1200px) {
     /* ---- global styles ---- */
     .container {
-      padding: 0;
+        padding: 0;
     }
     .page-content > .row >.col-lg-9 {
-      width: 885px;
+        width: 885px;
     }
     .page-content > .row > .col-lg-3 {
-      width: 315px;
+        width: 315px;
     }
     .photo-slider .slider-title h2 span:first-of-type {
         font-size: 22px;
@@ -349,5 +368,19 @@
     /* ---- footer styles ---- */
     footer h3 {
         width: 85%;
+    }
+    /* ---- children header styles ---- */
+    /* ---- child article styles ---- */
+    .child-article .slider-title {
+        top: 35px;
+    }
+    .child-article .child-donation li {
+        padding: 15px 20px;
+    }
+    .child-article .child-donation li:nth-of-type(4) {
+        padding: 15px 10px;
+    }
+    .child-article .child-donation li p:nth-of-type(3) {
+        font-size: 15px;
     }
 }

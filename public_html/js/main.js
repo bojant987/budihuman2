@@ -140,7 +140,15 @@ $(document).ready(function() {
         });
     }
     fixAspectRatio();
-    // ddd
+    
+    // child donations display
+    function childDonationDisplay() {
+        $(".child-donation .donation-input").each(function(input) {
+            var output = parseFloat($(this).text()).toFixed(2);
+            $(this).next().text(thousandSeparator(output) + " din");
 
+        });
+    }
+    childDonationDisplay();
 
 });
