@@ -33,7 +33,7 @@ $(document).ready(function() {
     });
 
     // sliders
-    $(".kids-slider").slippry({
+    $(".children-slider").slippry({
         pager: false,
         transition: "horizontal",
         auto: true,
@@ -93,24 +93,44 @@ $(document).ready(function() {
     });
 
     // thermometer
-    function thermometer() {
-        var min = parseFloat($(".thermometer").attr("data-min"));
-        var max = parseFloat($(".thermometer").attr("data-max"));
-        var value = parseFloat($(".thermometer").attr("data-value"));
+    function thermometer(location) {
+        var min = parseFloat(location.attr("data-min"));
+        var max = parseFloat(location.attr("data-max"));
+        var value = parseFloat(location.attr("data-value"));
         min = min.toFixed(2);
         max = max.toFixed(2);
         value = value.toFixed(2);
+
         var missing = (max - value).toFixed(2);
         var progress = (value / (max - min)) * 100;
 
-        $(".thermometer .progress-bar").css("width", progress + "%");
-        $(".thermometer .progress-bar + span").css("left", (progress * 0.96) + "%");
+        if (location.parent().is(".fundraiser")) {
+          location.find(".progress-bar").css("width", progress + "%");
+          location.find(".progress-bar + span").css("left", (progress * 0.96) + "%");
+          location.parent().find(".missing > .number-output").text(thousandSeparator(missing) + " din");
+        }
 
-        $(".current > span:nth-of-type(2)").text(thousandSeparator(value) + " din");
-        $(".missing > span:nth-of-type(2)").text(thousandSeparator(missing) + " din");
-        $(".needed > span:nth-of-type(2)").text(thousandSeparator(max) + " din");
+        if (location.parent().is(".user-fundraiser")) {
+          var currentOffset = $(".thermometer-body").height() * (progress * 0.97)/100 - 61;
+          var progressOffset = $(".thermometer-body").height() * progress/100 + 4;
+
+          location.find(".progress-bar").css("height", progressOffset + "px");
+          location.find(".thermometer-measurer").css("bottom", (progress * 0.97) + "%");
+          location.find(".current").css("bottom", currentOffset + "px");
+          location.parent().find(".missing > .number-output").text("-" + thousandSeparator(missing) + " din");
+        }
+
+        location.parent().find(".current > .number-output").text(thousandSeparator(value) + " din");
+        location.parent().find(".needed > .number-output").text(thousandSeparator(max) + " din");
     }
-    thermometer();
+
+    if ($(".fundraiser .thermometer").length > 0) {
+      thermometer($(".fundraiser .thermometer"));
+    }
+    if ($(".user-fundraiser .thermometer").length > 0) {
+      thermometer($(".user-fundraiser .thermometer"));
+    }
+
 
     // thousand separator
     function thousandSeparator(number) {
@@ -140,15 +160,15 @@ $(document).ready(function() {
         });
     }
     fixAspectRatio();
-    
+
     // child donations display
-    function childDonationDisplay() {
-        $(".child-donation .donation-input").each(function(input) {
+    function usersDonationDisplay() {
+        $(".users-donation .donation-input").each(function(input) {
             var output = parseFloat($(this).text()).toFixed(2);
             $(this).next().text(thousandSeparator(output) + " din");
 
         });
     }
-    childDonationDisplay();
+    usersDonationDisplay();
 
 });
