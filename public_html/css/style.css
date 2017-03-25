@@ -32,7 +32,27 @@ h1, h2, h3, h4, h5, h6 {
     background: url(assets/link-icon.png) 10px center no-repeat;
     background-color: #28A44A;
 }
+.search input {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    border: 1px solid #28A44A;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    vertical-align: top;
+    background: url("assets/search-shadow.jpg") repeat-x top left;
+}
 
+.search button {
+    height: 32px;
+    line-height: 32px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #000;
+    background-color: #28A44A;
+    color: #fff;
+    transform: translateX(-4px);
+    font-size: 11px;
+}
 .page-content {
     box-shadow: 0 0 3px #4e4e4e;
     margin-top: 20px;
@@ -207,7 +227,57 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.pagination li {
+    display: block;
+    float: left;
+    width: 22px;
+    height: 22px;
+}
 
+.pagination li a {
+    border-color: #bdbcbc;
+    border-right: none;
+    border-radius: 0 !important;
+    padding: 0;
+    display: block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+}
+
+.pagination li:last-of-type a {
+    border-right: 1px solid #bdbcbc;
+}
+
+.pagination li a:hover, .users-page .pagination li a:focus, .users-page .pagination li a.active {
+    background-color: #28a44a;
+    color: #fff;
+}
+
+.pagination li:first-of-type a {
+    background: url(assets/slider-icons.png) 0 -5px no-repeat;
+    background-size: 60px 31px;
+}
+
+.pagination li:first-of-type a:hover, .users-page .pagination li:first-of-type a:focus {
+    background: url(assets/white-arrows.png) 0 -5px no-repeat;
+    background-size: 60px 31px;
+    background-color: #28a44a;
+}
+
+.pagination li:last-of-type a {
+    background: url(assets/slider-icons.png) -35px -5px no-repeat;
+    background-size: 60px 31px;
+}
+
+.pagination li:last-of-type a:hover, .users-page .pagination li:last-of-type a:focus {
+    background: url(assets/white-arrows.png) -35px -5px no-repeat;
+    background-size: 60px 31px;
+    background-color: #28a44a;
+}
 /* ---- header banner styles ---- */
 
 .header-banner {
@@ -415,29 +485,6 @@ h1, h2, h3, h4, h5, h6 {
 .counter-bar form {
     display: block;
 }
-
-.counter-bar form input {
-    height: 32px;
-    line-height: 32px;
-    padding: 0 10px;
-    border: 1px solid #28A44A;
-    border-right: none;
-    border-radius: 5px 0 0 5px;
-    vertical-align: top;
-    background: url("assets/search-shadow.jpg") repeat-x top left;
-}
-
-.counter-bar form button {
-    height: 32px;
-    line-height: 32px;
-    border-radius: 0 5px 5px 0;
-    border: 1px solid #000;
-    background-color: #28A44A;
-    color: #fff;
-    transform: translateX(-4px);
-    font-size: 11px;
-}
-
 
 /* ---- index page styles ---- */
 
@@ -1183,7 +1230,7 @@ footer .copyright p {
 }
 
 
-/* ---- children header styles ---- */
+/* ---- users header styles ---- */
 
 .users-header {
     padding: 10px 0;
@@ -1338,62 +1385,6 @@ footer .copyright p {
 .users-article .donation-input {
     display: none;
 }
-
-
-/* ---- children page navigation styles ---- */
-
-.users-page .pagination li {
-    display: block;
-    float: left;
-    width: 22px;
-    height: 22px;
-}
-
-.users-page .pagination li a {
-    border-color: #bdbcbc;
-    border-right: none;
-    border-radius: 0;
-    padding: 0;
-    display: block;
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    background-color: #fff;
-    color: #000;
-    font-size: 16px;
-}
-
-.users-page .pagination li:last-of-type a {
-    border-right: 1px solid #bdbcbc;
-}
-
-.users-page .pagination li a:hover, .users-page .pagination li a:focus, .users-page .pagination li a.active {
-    background-color: #28a44a;
-    color: #fff;
-}
-
-.users-page .pagination li:first-of-type a {
-    background: url(assets/slider-icons.png) 0 -5px no-repeat;
-    background-size: 60px 31px;
-}
-
-.users-page .pagination li:first-of-type a:hover, .users-page .pagination li:first-of-type a:focus {
-    background: url(assets/white-arrows.png) 0 -5px no-repeat;
-    background-size: 60px 31px;
-    background-color: #28a44a;
-}
-
-.users-page .pagination li:last-of-type a {
-    background: url(assets/slider-icons.png) -35px -5px no-repeat;
-    background-size: 60px 31px;
-}
-
-.users-page .pagination li:last-of-type a:hover, .users-page .pagination li:last-of-type a:focus {
-    background: url(assets/white-arrows.png) -35px -5px no-repeat;
-    background-size: 60px 31px;
-    background-color: #28a44a;
-}
-
 
 /* ---- sliders small styles ---- */
 
@@ -1714,4 +1705,159 @@ footer .copyright p {
   left: 50%;
   transform: translateX(-50%);
   bottom: 15px;
+}
+
+/* ---- donation pages styles ---- */
+.donations-pages {
+  border-top: 3px solid #28a44a;
+  border-right: 1px solid #999;
+}
+.donations-pages .search {
+  margin: 8px 0 8px 25px;
+}
+
+.donations-pages .tables {
+  padding: 0 5px;
+}
+
+.donations-pages .tables table {
+  border: 1px solid #bdbcbc;
+  box-shadow: 0 0 3px #bdbcbc;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.donations-pages .tables table .right {
+  text-align: right;
+  width: 51%;
+}
+
+.donations-pages .tables tr {
+  height: 40px;
+}
+
+.donations-pages .tables td {
+  padding: 0 10px;
+}
+
+.donations-pages .tables thead tr {
+  border-bottom: 4px solid #28a44a;
+  color: #28a44a;
+}
+
+.donations-pages .tables tbody tr {
+  border-bottom: 1px dotted #bdbcbc;
+  color: #000;
+}
+
+.donations-pages .tables > h2 {
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+  height: 70px;
+  line-height: 70px;
+  margin-left: 20px;
+}
+.donations-pages .tables .table-input {
+  display: none;
+}
+
+.donations-pages .pagination {
+  margin: 30px 0;
+}
+
+.donations-pages tbody tr td:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.all-donations-page .all-donations tbody tr:first-of-type {
+  background-color: #eceff1;
+  color: #303a41;
+  font-weight: 700;
+  font-size: 14px;
+}
+.donator-donations-page .donator-donations tbody tr:first-of-type {
+  background-color: #eceff1;
+  color: #303a41;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.user-donations-page .user-donations tbody tr:nth-of-type(4) {
+  background-color: #CC3643;
+  color: #fff;
+  font-weight: bold;
+}
+
+.user-donations-page .user-donations tbody tr:nth-of-type(6) {
+  background-color: #ECEFF1;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ---- donation pages ASIDE styles ---- */
+.info-feed .donations-filter h2 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 15px;
+  color: #000;
+  height: 58px;
+  line-height: 55px;
+  border-top: 3px solid #28a44a;
+}
+.info-feed .donations-filter > ul {
+  padding: 0;
+  margin-bottom: 5px;
+}
+.info-feed .donations-filter > ul > li > a {
+  padding-left: 40px;
+  color: #6f6f70;
+  height: 40px;
+  line-height: 40px;
+}
+
+.info-feed .donations-filter > ul > li > a {
+  background: url(assets/filter-arrow.png) 20px center no-repeat;
+}
+
+.info-feed .donations-filter > ul > li > a:hover, .info-feed .donations-filter > ul > li > a:focus {
+  color: #28a44a;
+  background: url(assets/filter-arrow-hover.png) 20px center no-repeat;
+}
+
+.info-feed .donations-filter > ul > li:first-of-type {
+  border-bottom: 1px dashed #bdbcbc;
+  background: url(assets/shadow.png) repeat-x 0 0;
+}
+
+.info-feed .donations-filter > ul > li > a.active {
+  display: inline-block;
+  color: #28a44a;
+  background: url(assets/filter-arrow-hover.png) 20px center no-repeat;
+}
+
+.info-feed .donations-filter > ul .subcategories  ul a {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  border-bottom: 1px dashed #bdbcbc;
+  color: #7e8897;
+  margin-bottom: 5px;
+}
+
+.info-feed .donations-filter > ul .subcategories  ul li:first-of-type {
+  margin-top: 10px;
+}
+
+.info-feed .donations-filter > ul .subcategories  ul li:last-of-type {
+  margin-bottom: 20px;
+}
+
+.info-feed .donations-filter > ul .subcategories  ul a:hover, .info-feed .donations-filter > ul .subcategories  ul a:focus {
+  color: #28a44a;
+  border-color: #28a44a;
+}
+.info-feed .donations-filter > ul > li:last-of-type {
+  border-top: 1px dashed #bdbcbc;
+  border-bottom: 1px dashed #bdbcbc;
 }

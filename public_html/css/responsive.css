@@ -7,6 +7,12 @@
 
 @media (min-width: 768px) {
     /* ---- global styles ---- */
+    .search input {
+        width: 240px;
+    }
+    .search button {
+        width: 40px;
+    }
     .slider-container {
         padding-bottom: 0;
         height: auto;
@@ -65,6 +71,30 @@
     .photo-banner .banner-info {
         height: 130px;
     }
+    .pagination li {
+        width: 40px;
+        height: 40px;
+    }
+    .pagination li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .pagination li:first-of-type a {
+        background: url(assets/slider-icons.png) 0 -6px no-repeat;
+    }
+    .pagination li:first-of-type a:hover, .users-page .pagination li:first-of-type a:focus {
+        background: url(assets/white-arrows.png) 0 -6px no-repeat;
+        background-color: #28a44a;
+    }
+    .pagination li:last-of-type a {
+        background: url(assets/slider-icons.png) -55px -6px no-repeat;
+    }
+    .pagination li:last-of-type a:hover, .users-page .pagination li:last-of-type a:focus {
+        background: url(assets/white-arrows.png) -55px -6px no-repeat;
+        background-color: #28a44a;
+    }
     /* ---- upper header styles ---- */
     .index-page .slider-container>h2 {
         font-size: 24px;
@@ -100,12 +130,7 @@
         font-size: 15px;
         display: inline-block;
     }
-    .counter-bar form input {
-        width: 240px;
-    }
-    .counter-bar form button {
-        width: 40px;
-    }
+
     /* ---- index page styles ---- */
     .index-page .slider-container>h2 {
         font-size: 24px;
@@ -134,7 +159,7 @@
     footer .info-group {
         margin-right: 20px;
     }
-    /* ---- children header styles ---- */
+    /* ---- users header styles ---- */
     /* ---- child article styles ---- */
     .users-article .users-donation ul {
         height: 80px;
@@ -168,31 +193,7 @@
         color: #fff;
         text-align: right;
     }
-    /* ---- children page navigation styles ---- */
-    .users-page .pagination li {
-        width: 40px;
-        height: 40px;
-    }
-    .users-page .pagination li a {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 20px;
-    }
-    .users-page .pagination li:first-of-type a {
-        background: url(assets/slider-icons.png) 0 -5px no-repeat;
-    }
-    .users-page .pagination li:first-of-type a:hover, .users-page .pagination li:first-of-type a:focus {
-        background: url(assets/white-arrows.png) 0 -5px no-repeat;
-        background-color: #28a44a;
-    }
-    .users-page .pagination li:last-of-type a {
-        background: url(assets/slider-icons.png) -55px -5px no-repeat;
-    }
-    .users-page .pagination li:last-of-type a:hover, .users-page .pagination li:last-of-type a:focus {
-        background: url(assets/white-arrows.png) -55px -5px no-repeat;
-        background-color: #28a44a;
-    }
+
     /* ---- sliders small styles ---- */
     .sliders-small>.row>.col-sm-6:nth-child(2n+1) {
         padding-right: 3px;
@@ -325,6 +326,27 @@
       border-right: 1px solid #bdbcbc;
     }
     /* ---- child page ASIDE styles ---- */
+    /* ---- donation pages styles ---- */
+    .donations-pages .tables > h2 {
+      font-size: 24px;
+    }
+    .donations-pages .breadcrumb {
+      float: left;
+    }
+    .donations-pages .search {
+      float: right;
+      margin: 8px 25px 8px 0;
+    }
+    .donations-pages .tables {
+      padding: 0 25px;
+    }
+    .donations-pages .tables > h2 {
+      margin-left: 0;
+    }
+    .donations-pages .tables td {
+      padding: 0 20px;
+    }
+    /* ---- donation pages ASIDE styles ---- */
 }
 
 @media (min-width: 992px) {
@@ -449,7 +471,7 @@
     footer .footer-nav+img {
         float: right;
     }
-    /* ---- children header styles ---- */
+    /* ---- users header styles ---- */
     /* ---- child article styles ---- */
     .users-article .users-donation li {
         padding: 15px 10px;
@@ -460,7 +482,7 @@
     .users-article .users-donation li p:nth-of-type(3) {
         font-size: 12px;
     }
-    /* ---- children page navigation styles ---- */
+
     /* ---- sliders small styles ---- */
     .sliders-small .sy-box {
         width: 310px !important;
@@ -500,6 +522,8 @@
         font-size: 16px;
     }
     /* ---- child page ASIDE styles ---- */
+    /* ---- donation pages styles ---- */
+    /* ---- donation pages ASIDE styles ---- */
 }
 
 @media (min-width: 1200px) {
@@ -591,7 +615,7 @@
     footer h3 {
         width: 85%;
     }
-    /* ---- children header styles ---- */
+    /* ---- users header styles ---- */
     /* ---- child article styles ---- */
     .users-article .banner-title {
         top: 35px;
@@ -605,7 +629,7 @@
     .users-article .users-donation li p:nth-of-type(3) {
         font-size: 15px;
     }
-    /* ---- children page navigation styles ---- */
+
     /* ---- sliders small styles ---- */
     .sliders-small .sy-box {
         width: auto !important;
@@ -644,4 +668,6 @@
         font-size: 20px;
     }
     /* ---- child page ASIDE styles ---- */
+    /* ---- donation pages styles ---- */
+    /* ---- donation pages ASIDE styles ---- */
 }

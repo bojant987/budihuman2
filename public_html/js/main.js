@@ -142,7 +142,7 @@ $(document).ready(function() {
     // table numbers display
     function tableDisplay() {
 
-        $(".last-donations table .table-input").each(function(input) {
+        $(".table-input").each(function(input) {
             var output = parseFloat($(this).text()).toFixed(2);
             $(this).next().text(thousandSeparator(output) + " din");
 
