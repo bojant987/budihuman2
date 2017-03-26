@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Bojan Todorovic">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Humanitarna fondacija "Budi human - Aleksandar Šapić"</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/slippry.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+      <div id="fb-root"></div>
+      <!-- core js (fb plugin js SDK) -->
+      <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+        <header>
+            <div class="upper-header">
+                <div class="container">
+                    <nav class="upper-navigation clearfix">
+                        <p class="hidden-xs"><a href="#" class="logo"><img src="img/logo.png" alt="logo"></a></p>
+                        <ul class="social list-inline hidden-xs">
+                            <li>
+                                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbudihuman%2F&width=100px&layout=button_count&action=like&show_faces=false&share=false&height=21&appId"
+                                        width="100" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbudihuman%2F&width=100px&layout=button_count&action=like&show_faces=false&share=false&height=21&appId"
+                                        width="100" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                            </li>
+                            <li>
+                                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fbudihuman%2F&layout=button&size=small&mobile_iframe=true&width=58&height=20&appId"
+                                        width="58" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                            </li>
+                            <li>
+                                <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button"
+                                        src="http://platform.twitter.com/widgets/tweet_button.a0ec3119d8db2bc5422f2144c89ad7a9.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.budihuman.rs%2F&amp;size=m&amp;text=Humanitarna%20fondacija%20%22Budi%20human%20-%20Aleksandar%20%C5%A0api%C4%87%22&amp;time=1489580457208&amp;type=share&amp;url=http%3A%2F%2Fwww.budihuman.rs%2F&amp;via=budihuman" frameborder="0"></iframe>
+                            </li>
+                        </ul>
+                        <ul class="upper-links list-inline text-center">
+                            <li><a href="#">Vesti</a></li>
+                            <li><a href="#">O nama</a></li>
+                            <li><a href="#" class="link-special">Drugi o nama</a></li>
+                            <li><a href="#">Latinica</a></li>
+                            <li><a href="#">Ћирилица</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>   <!-- upper header -->
+            <div class="header-banner" style="background: #28A44A;">
+                <div class="container clearfix">
+                    <p class="marquee">
+                        Građanima iz cele Srbije pružamo podršku u prikupljanju novca za lečenje!. Ako vam je potrebna pomoć pozovite 011/412-3030 i postanite korisnik naših usluga!
+                    </p>
+                    <img src="img/logo-big.png" alt="big logo">
+                </div>
+            </div>    <!-- header banner -->
+            <div class="lower-header">
+                <nav class="navbar navbar-default" style="background: #28A44A;">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-bar" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand visible-xs-inline-block" href="#">
+                                <img src="img/logo.png" alt="logo">
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navigation-bar">
+                            <ul class="nav navbar-nav text-uppercase text-center">
+                                <li><a href="#">naslovna<span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">deca</a></li>
+                                <li><a href="#">odrasli</a></li>
+                                <li><a href="#">udruženja</a></li>
+                                <li><a href="#">ustanove</a></li>
+                                <li class="dropdown-control">
+                                    <a href="#" aria-haspopup="true" aria-expanded="false">donacije <span class="fa fa-plus hidden-md hidden-lg"></span></a>
+                                    <ul class="dropdown-list list-unstyled text-left">
+                                        <li><a href="#">sve uplate</a></li>
+                                        <li><a href="#">spisak uplata po korisnicima</a></li>
+                                        <li><a href="#">spisak uplata po donatorima</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">kako da pomognem?</a></li>
+                                <li><a href="#">kako da postanem korisnik?</a></li>
+                                <li><a href="#">pomogli smo</a></li>
+                                <li><a href="#">način rada</a></li>
+                            </ul>
+                        </div>   <!-- navbar-collapse -->
+                    </div>    <!-- container -->
+                </nav>
+                <div class="colors"></div>
+            </div>    <!-- lower header -->
+        </header>
+        <main style="background: #F4EBEC;">
+            <div class="container">
+                <section class="counter-bar" style="background: #fff;">
+                    <div class="counter">
+                        <p><span class="counter-input">102</span></p>
+                        <a href="#">deca</a>
+                    </div>
+                    <div class="counter">
+                        <p><span class="counter-input">58</span></p>
+                        <a href="#">odrasli</a>
+                    </div>
+                    <div class="counter">
+                        <p><span class="counter-input">6</span></p>
+                        <a href="#">udruženja</a>
+                    </div>
+                    <div class="counter">
+                        <p><span class="counter-input">6</span></p>
+                        <a href="#">ustanove</a>
+                    </div>
+                    <div class="counter">
+                        <p><span class="counter-input">3</span></p>
+                        <a href="#">posebne akcije</a>
+                    </div>
+                    <p class="text-uppercase">ČEKAJU NA TVOJU POMOĆ!</p>
+                    <a href="#" class="link-special">O nama</a>
+                    <form class="search">
+                        <input type="search">
+                        <button type="submit">Traži</button>
+                    </form>
+                </section>    <!-- counter bar -->
+                <section class="page-content" style="background: #fff;">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-9">
+                            <section class="helped-page about-pages">
+                              <ol class="breadcrumb">
+                                  <li><a href="#">Naslovna</a></li>
+                                  <li><a href="#">Kako da postanem korisnik?</a></li>
+                                  <li class="active"></li>
+                              </ol>
+                              <div class="about-content">
+                                <h2>Aleksandar Gabrić</h2>
+                                <p class="date">25.01.2017.</p>
+                                <img src="img/aleksandar-gabric.png" alt="">
+                                <p>
+                                  Donatori su svojim uplatama omogućili korisniku
+                                  ondacije Aleksandru Gabriću plaćanje rehabilitacije.
+                                </p>
+                                <p>
+                                  U te svrhe je sa Aleksandrovog korisničkog računa
+                                  na račun RENONA preneto 300 evra.
+                                </p>
+                                <p>
+                                  Aleksandar je presladak dečak koji je rođen
+                                  sa posledicama cerebralne paralize. Njegovo stanje
+                                  redovno kontrolišu neurolog, logoped, psiholog,
+                                  ortoped i kardiolog.
+                                </p>
+                                <p>
+                                  Zahvaljujemo se svima koji su svojim donacijama
+                                  pomogli Aleksandru. Apelujemo na sve dobre ljude
+                                  koji su u prilici da nastave da pomažu ovom dečaku.
+                                </p>
+                              </div>
+                              <ul class="social list-inline">
+                                  <li>
+                                      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbudihuman%2F&width=100px&layout=button_count&action=like&show_faces=false&share=false&height=21&appId"
+                                              width="100" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbudihuman%2F&width=100px&layout=button_count&action=like&show_faces=false&share=false&height=21&appId"
+                                              width="100" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                  </li>
+                                  <li>
+                                      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fbudihuman%2F&layout=button&size=small&mobile_iframe=true&width=58&height=20&appId"
+                                              width="58" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                  </li>
+                                  <li>
+                                      <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button"
+                                              src="http://platform.twitter.com/widgets/tweet_button.a0ec3119d8db2bc5422f2144c89ad7a9.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.budihuman.rs%2F&amp;size=m&amp;text=Humanitarna%20fondacija%20%22Budi%20human%20-%20Aleksandar%20%C5%A0api%C4%87%22&amp;time=1489580457208&amp;type=share&amp;url=http%3A%2F%2Fwww.budihuman.rs%2F&amp;via=budihuman" frameborder="0"></iframe>
+                                  </li>
+                              </ul>
+                              <section class="sliders-small">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <div class="slider-container">
+                                      <h2>Pomozi deci</h2>
+                                        <ul class="children-slider photo-banner">
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/children-01.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Za Dejanin</span><span>osmeh</span></h2>
+                                                  <h2><span>Dejana</span></h2>
+                                                  <h3>Upiši <span>258</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/children-02.png"  alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Da Dušanki</span><span>olakšamo detinjstvo</span></h2>
+                                                  <h2><span>Dušanka</span></h2>
+                                                  <h3>Upiši <span>256</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/children-03.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Za Anin</span><span>prvi korak</span></h2>
+                                                  <h2><span>Ana</span></h2>
+                                                  <h3>Upiši <span>253</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/children-04.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Za Anjin</span><span>korak</span></h2>
+                                                  <h2><span>Anja</span></h2>
+                                                  <h3>Upiši <span>252</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/children-05.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Za Stevanovo</span><span>bolje sutra</span></h2>
+                                                  <h2><span>Stevan</span></h2>
+                                                  <h3>Upiši <span>251</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>    <!-- slider container -->
+                                  </div>  <!-- col -->
+                                  <div class="col-sm-6">
+                                    <div class="slider-container">
+                                      <h2>Pomozi odraslima</h2>
+                                        <ul class="grownups-slider photo-banner">
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/grownups-01.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Olakšajmo Borku</span><span>život</span></h2>
+                                                  <h2><span>Borko</span></h2>
+                                                  <h3>Upiši <span>260</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/grownups-02.png"  alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Spasimo Milošu</span><span>život</span></h2>
+                                                  <h2><span>Miloš</span></h2>
+                                                  <h3>Upiši <span>259</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/grownups-03.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Za Marijino</span><span>bolje sutra</span></h2>
+                                                  <h2><span>Marija</span></h2>
+                                                  <h3>Upiši <span>255</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/grownups-04.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Da Snežana pobedi</span><span>opaku bolest</span></h2>
+                                                  <h2><span>Snežana</span></h2>
+                                                  <h3>Upiši <span>254</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/grownups-05.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Da olakšamo Vladimiru</span><span>život</span></h2>
+                                                  <h2><span>Vladimir</span></h2>
+                                                  <h3>Upiši <span>250</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>    <!-- slider container -->
+                                  </div>  <!-- col -->
+                                  <div class="col-sm-6">
+                                    <div class="slider-container">
+                                      <h2>Pomozi udruženjima</h2>
+                                        <ul class="funds-slider photo-banner">
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/funds-01.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Zajedno za razvoj</span><span>LIX metoda</span></h2>
+                                                  <h2><span>LIX metoda</span></h2>
+                                                  <h3>Upiši <span>119</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/funds-02.png"  alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Pomozi</span><span>deci sa invaliditetom</span></h2>
+                                                  <h2><span>Deca sa invaliditetom</span></h2>
+                                                  <h3>Upiši <span>95</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/funds-03.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Za decu</span><span>obolelu od raka</span></h2>
+                                                  <h2><span>Deca obolela od raka</span></h2>
+                                                  <h3>Upiši <span>51</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/funds-04.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Da svako u Srbiji zna</span><span>šta je disleksija</span></h2>
+                                                  <h2><span>Disleksija</span></h2>
+                                                  <h3>Upiši <span>48</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/funds-05.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                  <h2><span>Pomozi</span><span>osobama sa autizmom</span></h2>
+                                                  <h2><span>Osobe sa autizmom</span></h2>
+                                                  <h3>Upiši <span>31</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>    <!-- slider container -->
+                                  </div>  <!-- col -->
+                                  <div class="col-sm-6">
+                                    <div class="slider-container">
+                                      <h2>Pomozi ustanovama</h2>
+                                        <ul class="hospitals-slider photo-banner">
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/hospitals-01.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                    <h2><span>Da KBC Zemun</span><span>kupi ultrazvučni aparat</span></h2>
+                                                    <h2><span>KBC Zemun</span></h2>
+                                                    <h3>Upiši <span>170</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/hospitals-02.png"  alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                    <h2><span>Za decu</span><span>sa smetnjama u razvoju</span></h2>
+                                                    <h2><span>Deca sa smetnjama u razvoju</span></h2>
+                                                    <h3>Upiši <span>86</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/hospitals-03.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                    <h2><span>Da građani Iriga</span><span>budu dobro lečeni</span></h2>
+                                                    <h2><span>Građani Iriga</span></h2>
+                                                    <h3>Upiši <span>57</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/hospitals-04.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                    <h2><span>Hitna</span><span>SMS pomoć</span></h2>
+                                                    <h2><span>Hitna</span></h2>
+                                                    <h3>Upiši <span>9</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                  <img src="img/hospitals-05.png" alt="">
+                                                  <img src="img/slider-logo.png" alt="" class="slider-logo hidden-xs">
+                                                </a>
+                                                <div class="banner-title clearfix">
+                                                    <h2><span>Pomozi Bolnici za cerebralnu paralizu i razvojnu neurologiju</span><span>da adaptira Stacionarno odeljenje B</span></h2>
+                                                    <h2><span>Bolnica za cerebralnu paralizu</span></h2>
+                                                    <h3>Upiši <span>8</span> i pošalji SMS na <span>3030</span></h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>    <!-- slider container -->
+                                  </div>  <!-- col -->
+                                </div>  <!-- row -->
+                              </section>  <!-- sliders small -->
+                            </section>
+                        </div>  <!-- col -->
+                        <div class="col-md-4 col-lg-3">
+                            <aside class="info-feed">
+                              <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3 col-420">
+                                  <article class="founders-word">
+                                    <a href="#">
+                                      <img src="img/founder.png" alt="founder">
+                                    </a>
+                                  </article>    <!-- founders word -->
+                                  <article class="fundraiser clearfix">
+                                    <p class="current"><span>UPLAĆENO</span> <span class="number-output"></span></p><p class="missing"><span>NEDOSTAJE</span> <span class="number-output"></span></p>
+                                    <div class="thermometer" data-min="0" data-max="1044001482.60" data-value="307029483.70">
+                                      <span></span><span><span class="progress-bar"></span><span class="number-output"></span></span>
+                                    </div>
+                                    <p class="needed"><span>POTREBNO</span> <span></span></p>
+                                  </article>  <!-- fundraiser -->
+                                  <article class="messages text-center">
+                                    <p>Ukupan broj primljenih SMS poruka</p>
+                                    <div class="sms">
+                                      <span class="counter-input">1902427</span>
+                                    </div>
+                                    <p>Do: 18.03.2017.</p>
+                                  </article>    <!-- messages -->
+                                  <article class="auctions">
+                                    <a href="#">
+                                      <img src="img/auctions.png" alt="founder">
+                                    </a>
+                                  </article>    <!-- auctions -->
+                                  <article class="sms-info text-center">
+                                    <h4><img src="img/sms-info-01.png" alt="">Upiši <span>1</span> i pošalji SMS na <span>3030</span></h4>
+                                    <p>Cena poruke je 200 din</p>
+                                    <p>(PDV se ne naplaćuje)</p>
+                                    <p>Svi operateri su se odrekli svoje zarade!</p>
+                                    <img src="img/sms-info-02.png" alt="">
+                                    <img src="img/sms-info-03.png" alt="">
+                                    <img src="img/sms-info-04.png" alt="">
+                                    <p><img src="img/sms-info-05.png" alt=""></p>
+                                  </article>    <!-- sms info -->
+                                  <article class="foreign text-center">
+                                    <h3><a href="#">DIJASPORA</a></h3>
+                                    <p><img src="img/foreign.png" alt="">Upiši <span>human1</span> i pošalji SMS na <span>455</span></p>
+                                    <p>Cena poruke je 10 CHF</p>
+                                  </article>    <!-- foreign -->
+                                  <article class="account text-center">
+                                    <h4>Uplati na račune fondacije</h4>
+                                    <p>Dinarski: 160-403108-51</p>
+                                    <p>Devizni: 00-540-0000737.7</p>
+                                    <p>IBAN broj RS35160005400000737782</p>
+                                    <img src="img/account.png" alt="">
+                                  </article>  <!-- account -->
+                                  <article class="address clearfix">
+                                    <h3 class="text-center">Radno vreme <span>pon - pet 08 - 16h</span></h3>
+                                    <p><span>Telefon:</span> 011/412-30-30</p>
+                                    <p><span>Adresa: </span><span>Milutina Milankovića 120d</span> 11070 Novi Beograd</p>
+                                  </article>    <!-- address -->
+                                  <article class="update-info text-center">
+                                    <p>
+                                      Svaka uplata na račune korisnika biće prikazana
+                                      sutradan na sajtu. Donacije SMS-om objavljujemo
+                                      jednom mesečno, nakon uplate operatera.
+                                    </p>
+                                  </article>  <!-- update-info -->
+                                  <article class="e-donate text-center">
+                                    <a href="#">
+                                      <p>e-Doniraj</p>
+                                      <p>Doniraj internet plaćanjem</p>
+                                    </a>
+                                    <img src="img/e-donate.png" alt="">
+                                  </article>  <!-- e-donate -->
+                                  <article class="last-donations">
+                                    <table>
+                                      <caption>Poslednje uplate</caption>
+                                      <tbody>
+                                        <tr>
+                                          <td>Vladimir Tipsarević</td>
+                                          <td><span class="table-input">12000</span><span class="table-output"></span></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Nebojša Jelisavčić</td>
+                                          <td><span class="table-input">2000</span><span class="table-output"></span></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Radmila Nikolić</td>
+                                          <td><span class="table-input">2000</span><span class="table-output"></span></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Ivan Bošnjak</td>
+                                          <td><span class="table-input">500</span><span class="table-output"></span></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Marko Milisavljević</td>
+                                          <td><span class="table-input">500</span><span class="table-output"></span></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Uroš Stojaković</td>
+                                          <td><span class="table-input">9000</span><span class="table-output"></span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr>
+                                          <td colspan="2" class="text-right"><a href="#" class="see-all">Spisak svih uplata</a></td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </article>   <!-- last donations -->
+                                  <article class="our-ambassadors">
+                                    <h2>Naši ambasadori</h2>
+                                    <ul class="ambassadors-slider aside-slider clearfix">
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-01.jpg" alt="">
+                                        <div class="name">
+                                          <p>Ivan Bekjarev</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-02.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-03.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-04.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-05.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-06.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-02.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-07.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-08.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-09.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-10.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-11.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <img src="img/ambassadors-12.jpg" alt="">
+                                        <div class="name">
+                                          <p>Andrija Milošević</p>
+                                          <p>Glumac</p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix text-right pull-right">
+                                        <a href="#" class="see-all">Pogledaj sve</a>
+                                      </li>
+                                    </ul>
+                                  </article>    <!-- our ambassadors -->
+                                  <article class="twitter-ambassadors">
+                                    <h2>Twitter ambasadori</h2>
+                                    <ul class="twitter-ambassadors-slider aside-slider">
+                                      <li class="clearfix">
+                                        <a href="#"><img src="img/twitter-01.png" alt=""></a>
+                                        <div class="name">
+                                          <p><a href="#">Mishomorka</a></p>
+                                          <p><a href="#">@mishomor</a></p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix">
+                                        <a href="#"><img src="img/twitter-02.jpeg" alt=""></a>
+                                        <div class="name">
+                                          <p><a href="#">Jovan Licina</a></p>
+                                          <p><a href="#">@JovanLicina</a></p>
+                                        </div>
+                                      </li>
+                                      <li class="clearfix text-right pull-right">
+                                        <a href="#" class="see-all">Pogledaj sve</a>
+                                      </li>
+                                    </ul>
+                                  </article>  <!-- twitter ambassadors -->
+                                  <article class="news">
+                                    <h2>Vesti</h2>
+                                    <ul class="news-slider photo-banner">
+                                      <li class="clearfix">
+                                        <p>01.12.2016.</p>
+                                        <h2><a href="#">Veliko hvala roditeljima preminule devojčice koji su donirali novac našoj</a></h2>
+                                        <a href="#"><img src="img/news-01.jpg" alt=""></a>
+                                        <p>
+                                          Mina Rosić je sa samo osam godina – zauvek
+                                          zatvorila svoje oči. Ali, ono što su njeni
+                                          roditelji uradili nekoliko meseci nakon
+                                          njene smrti, zaslužuje jedno veliko – hvala!
+                                        </p>
+                                        <a href="#" class="pull-right">Više...</a>
+                                      </li>
+                                      <li class="clearfix">
+                                        <p>01.11.2016.</p>
+                                        <h2><a href="#">Novi ambasador naše Fondacije je Igor Kovačević</a></h2>
+                                        <a href="#"><img src="img/news-02.jpg" alt=""></a>
+                                        <p>
+                                          Igor Kovačević, poznati trener rođen je
+                                          1989. godine u Užicu. Po obrazovanju je
+                                          diplomirani profesor fizičkog vaspitanja...
+                                        </p>
+                                        <a href="#" class="pull-right">Više...</a>
+                                      </li>
+                                      <li class="clearfix">
+                                        <p>13.10.2016.</p>
+                                        <h2><a href="#">Krpica za paricu: Učenici škole „Kreativno pero“ pomogli korisniku naše</a></h2>
+                                        <a href="#"><img src="img/news-03.png" alt=""></a>
+                                        <p>
+                                          Humanitarna akcija Krpica za paricu,
+                                          treću godinu za redom, održana je u
+                                          četvrtak, 6. oktobra, 2016. godine u
+                                          prostorijama Vaspitno-obrazovnog sistema
+                                          Kreativno
+                                        </p>
+                                        <a href="#" class="pull-right">Više...</a>
+                                      </li>
+                                      <li class="clearfix">
+                                        <p>22.08.2016.</p>
+                                        <h2><a href="#">Humanitarne žurke na splavu Port za korisnike fondacije</a></h2>
+                                        <a href="#"><img src="img/news-04.jpg" alt=""></a>
+                                        <p>
+                                          Splav Port je tokom avgusta nekoliko
+                                          puta organizovao humanitarne večeri
+                                          kako bi pomogao korisnicima naše fondacije.
+                                          Beograđane je u tim prilikama zab
+                                        </p>
+                                        <a href="#" class="pull-right">Više...</a>
+                                      </li>
+                                      <li class="clearfix">
+                                        <p>22.08.2016.</p>
+                                        <h2><a href="#">“Šesti krug” za korisnike fondacije: Mirko Alvirović nagradu osvojenu u </a></h2>
+                                        <a href="#"><img src="img/news-05.jpg" alt=""></a>
+                                        <p>
+                                          Uoči Olimpijskih igara, Radio-televizija
+                                          Srbije emitovala je sportski kviz
+                                          humanitarno-zabavnog karaktera \"Šesti krug\",
+                                          u kojem su takmičari, poznate ličnosti iz sveta
+                                          sporta, medija, kulture, pokazali svoje
+                                          znanje o sportu. Svako od takmičara borio
+                                          se za neku ustanovu kojoj je prosledio
+                                          osvojenu nagradu.
+                                        </p>
+                                        <a href="#" class="pull-right">Više...</a>
+                                      </li>
+                                    </ul>
+                                    <p class="text-right"><a href="#" class="see-all">Pogledaj sve vesti</a></p>
+                                  </article>  <!-- news -->
+                                  <article class="facebook-page">
+                                      <div class="fb-page" data-href="https://www.facebook.com/budihuman" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-width="500"><blockquote cite="https://www.facebook.com/budihuman" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/budihuman">Budi human</a></blockquote></div>
+                                  </article>    <!-- facebook page -->
+                                </div>  <!-- col -->
+                              </div>  <!-- row -->
+                            </aside>
+                        </div>    <!-- col -->
+                    </div>    <!-- row -->
+                </section>  <!-- page content -->
+                <section class="ways-to-help">
+                  <div class="row">
+                    <div class="col-468 col-sm-4 col-md-3 col-lg-2">
+                      <article>
+                        <p><a href="#">Uplati donaciju na dinarski ili devizni račun!</a></p>
+                      </article>
+                    </div>  <!-- col -->
+                    <div class="col-468 col-sm-4 col-md-3 col-lg-2">
+                      <article>
+                        <p><a href="#">Volontiraj!</a></p>
+                        <p>Pomozi starima i nemoćnima.</p>
+                      </article>
+                    </div>  <!-- col -->
+                    <div class="col-468 col-sm-4 col-md-3 col-lg-2">
+                      <article>
+                        <p><a href="#">Pokloni odeću, hranu, i sve za kuću!</a></p>
+                      </article>
+                    </div>  <!-- col -->
+                    <div class="col-468 col-sm-4 col-md-3 col-lg-2">
+                      <article>
+                        <p><a href="#">Upiši 1 i pošalji SMS na broj 3030!</a></p>
+                        <p>Cena poruke je 200 din(PDV se ne naplaćuje)</p>
+                      </article>
+                    </div>  <!-- col -->
+                    <div class="col-468 col-sm-4 col-md-3 col-lg-2">
+                      <article>
+                        <p><a href="#">Postavi baner na svoj sajt!</a></p>
+                      </article>
+                    </div>  <!-- col -->
+                    <div class="col-468 col-sm-4 col-md-3 col-lg-2">
+                      <article>
+                        <p><a href="#">Poznaješ nekog kome je neophodna pomoć?</a></p>
+                      </article>
+                    </div>  <!-- col -->
+                  </div>  <!-- row -->
+                </section>   <!-- ways to help -->
+            </div>
+        </main>
+        <footer style="background: #28a44a;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <address>
+                  <h3>Radno vreme pon - pet 08 - 16h</h3>
+                  <p><span>Adresa:</span> Bul. Milutina Milankovića 120d, 11070 Novi Beograd</p>
+                  <p><span>Telefon:</span> 011/412-30-30</p>
+                  <p><span>E-mail adresa:</span> <a href="mailto:fondacija@budihuman.rs"> fondacija@budihuman.rs</a></p>
+                </address>
+                <div id="map"></div>
+              </div>  <!-- col -->
+              <div class="col-md-6 clearfix">
+                <article class="donation-info">
+                  <h3>Humanitarna fondacija "Budi human - Aleksandar Šapić"</h3>
+                  <div class="info-group">
+                    <p><span>Dinarski račun fondacije:</span> 160-403108-51</p>
+                    <p><span>Devizni račun fondacije:</span> 00-540-0000737.7</p>
+                    <p>IBAN broj RS35160005400000737782</p>
+                    <p><span>SMS broj:</span> 3030</p>
+                  </div>
+                  <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                </article>
+                <nav class="footer-nav">
+                  <ul class="list-inline">
+                    <li>
+                        <a href="#">Deca</a>
+                        <a href="#">Odrasli</a>
+                        <a href="#">Udruženja</a>
+                        <a href="#">Ustanove</a>
+                        <a href="#">Donacije</a>
+                    </li>
+                    <li>
+                        <a href="#">Kako da pomognem?</a>
+                        <a href="#">Kako da postanem korisnik?</a>
+                        <a href="#">Pomogli smo</a>
+                        <a href="#">Način rada</a>
+                        <a href="#">Vesti</a>
+                    </li>
+                    <li>
+                        <a href="#">Potrebna vam je pomoć?</a>
+                        <a href="#">Drugi o nama</a>
+                        <a href="#">Reč osnivača</a>
+                        <a href="#">Dijaspora</a>
+                        <a href="#">Kontakt</a>
+                    </li>
+                  </ul>
+                </nav>
+                <img src="img/cards.png" alt="">
+              </div>
+            </div>  <!-- row -->
+          </div>
+          <div class="copyright" style="background: #1C7A35;">
+            <div class="container">
+              <p>Budihuman.rs - Humanitarna fondacija "Budi human - Aleksandar Šapić" © 2014. Sva prava zadržana.</p>
+            </div>
+          </div>
+        </footer>
+        <!-- core js (google maps api) -->
+        <script>
+          function initMap() {
+            var budihuman = {lat: 44.81309485, lng: 20.41284442};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: budihuman
+            });
+            var marker = new google.maps.Marker({
+              position: budihuman,
+              map: map
+            });
+          }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4F1zDIhzA_yTroX-P21scgZ2DLG5TE0k&callback=initMap"></script>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.marquee.min.js"></script>
+        <script src="js/slippry.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

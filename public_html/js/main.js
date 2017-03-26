@@ -21,7 +21,10 @@ $(document).ready(function() {
 
 
     });
-
+    // index page modal
+    if ($(".index-page").length > 0) {
+      $(".index-modal").modal("show");
+    }
 
     // counter bar counter splitting into digits
     $(".counter-input").each(function() {
@@ -170,5 +173,32 @@ $(document).ready(function() {
         });
     }
     usersDonationDisplay();
+
+    // news pages to top button showing on scroll
+    if ($(".news-pages").length > 0) {
+
+      $(document).scroll(function() {
+
+        var scrollDistance = $(document).scrollTop();
+        if (scrollDistance > 1000) {
+          $(".to-top").fadeIn();
+        } else {
+          $(".to-top").fadeOut();
+        }
+
+      });
+
+    }
+
+    // smooth scroll to top
+    $(".to-top").click(function(e) {
+      e.preventDefault();
+
+      $("html, body").animate({
+          scrollTop: 0
+      }, 800);
+
+    });
+
 
 });

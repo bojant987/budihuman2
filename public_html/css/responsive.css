@@ -3,10 +3,19 @@
         width: 50%;
         float: left;
     }
+    .e-donate .form-footer iframe {
+      transform: scale(1);
+      transform-origin: 0;
+      -webkit-transform: scale(1);
+      -webkit-transform-origin: 0;
+    }
 }
 
 @media (min-width: 768px) {
     /* ---- global styles ---- */
+    .index-modal .modal-dialog {
+      width: 663px;
+    }
     .search input {
         width: 240px;
     }
@@ -347,6 +356,69 @@
       padding: 0 20px;
     }
     /* ---- donation pages ASIDE styles ---- */
+    /* ---- about pages styles ---- */
+    .about-pages .about-content {
+      padding: 0 25px;
+    }
+    .about-pages .breadcrumb {
+      padding-left: 25px;
+    }
+    .about-pages .social {
+      padding: 10px 0 0 25px;
+    }
+    .founders-word-page .about-content img {
+      float: left;
+      margin-bottom: 0;
+    }
+    /* ---- news pages styles ---- */
+    .news-pages .breadcrumb {
+      padding-left: 25px;
+    }
+    .news-pages .news-content > h2 {
+      padding-left: 25px;
+    }
+    .news-pages .news-content article {
+      padding: 0 25px 10px;
+    }
+    .news-pages .news-content article img {
+      margin-bottom: 0;
+    }
+    .news-pages .col-26 {
+      width: 26.862%;
+      float: left;
+    }
+    .news-pages .col-71 {
+      width: 71%;
+      margin-left: 2%;
+      float: left;
+    }
+    .twitter-ambassadors-page .news-content article {
+      text-align: left;
+    }
+    .twitter-ambassadors-page .news-content article .twitter-photo {
+      float: left;
+    }
+    .twitter-ambassadors-page .news-content article .twitter-links {
+      float: left;
+      margin-left: 20px;
+    }
+    /* ---- e-donate page styles ---- */
+    .e-donate {
+      padding: 25px 20px;
+    }
+    .e-donate label {
+      width: 140px;
+      height: 30px;
+      margin-bottom: 0;
+      display: inline-block;
+    }
+    .e-donate .form-group {
+      margin-bottom: 3px;
+      height: 38.5px;
+    }
+    .e-donate .form-footer {
+      margin-left: 135px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -524,6 +596,9 @@
     /* ---- child page ASIDE styles ---- */
     /* ---- donation pages styles ---- */
     /* ---- donation pages ASIDE styles ---- */
+    /* ---- about pages styles ---- */
+    /* ---- news pages styles ---- */
+    /* ---- e-donate page styles ---- */
 }
 
 @media (min-width: 1200px) {
@@ -670,4 +745,7 @@
     /* ---- child page ASIDE styles ---- */
     /* ---- donation pages styles ---- */
     /* ---- donation pages ASIDE styles ---- */
+    /* ---- about pages styles ---- */
+    /* ---- news pages styles ---- */
+    /* ---- e-donate page styles ---- */
 }
