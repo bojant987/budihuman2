@@ -1,0 +1,13 @@
+1. Za pravilan prikaz brojeva na mestima gde ih treba formatirati kao 1.000.000,00 din
+   imate <span> sa klasom "number-input" gde upisete jednostavno broj. I "din" na kraju
+   ja dodajem, mozete da promenite u slucaju da imate drugu valutu u main.js u funkciji
+   numbersDisplay.
+
+2. Slicno je za prikaz brojeva rastavljenih na cifre(za pracenje broja sms-ova i sl.).
+   Imate <span> sa klasom "counter-input".
+
+3. Za termometre upisujete vrednosti u "data" atribute <div> taga sa klasom "thermometer".
+   Data-min, data-max, data-value.
+
+4. Sve stranice sa izuzetkom "e-donate.html" trebaju "slippry.css" i "slippry.min.js".
+   Zbog toga ih nisam zakomentarisao na ostalim stranicama kao "custom styles/js".

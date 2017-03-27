@@ -8,10 +8,9 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Humanitarna fondacija "Budi human - Aleksandar Šapić"</title>
 
-        <!-- Bootstrap -->
+        <!-- core styles -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="css/slippry.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
 
@@ -24,16 +23,18 @@
 
     </head>
     <body>
-      <div id="fb-root"></div>
-      <!-- core js (fb plugin js SDK) -->
-      <script>
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+        <div id="fb-root"></div>
+        <!-- core js (fb plugin js SDK) -->
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
         <header>
             <div class="upper-header">
                 <div class="container">
@@ -53,6 +54,9 @@
                             <li>
                                 <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button"
                                         src="http://platform.twitter.com/widgets/tweet_button.a0ec3119d8db2bc5422f2144c89ad7a9.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.budihuman.rs%2F&amp;size=m&amp;text=Humanitarna%20fondacija%20%22Budi%20human%20-%20Aleksandar%20%C5%A0api%C4%87%22&amp;time=1489580457208&amp;type=share&amp;url=http%3A%2F%2Fwww.budihuman.rs%2F&amp;via=budihuman" frameborder="0"></iframe>
+                            </li>
+                            <li>
+                                <div class="g-plusone" data-size="medium" data-href="http://www.budihuman.rs"></div>
                             </li>
                         </ul>
                         <ul class="upper-links list-inline text-center">
@@ -148,155 +152,164 @@
                     </form>
                 </section>    <!-- counter bar -->
                 <section class="page-content e-donate-page" style="background: #fff;">
-                  <form class="e-donate">
-                    <div class="form-group">
-                      <label><span>* </span>Donator(ime i prezime ili naziv firme):</label>
-                      <input type="text" name="name" value="">
-                    </div>
-                    <div class="form-group">
-                      <label><span>* </span>E-mail:</label>
-                      <input type="email" name="email" value="">
-                    </div>
-                    <div class="form-group">
-                      <label><span>* </span>Adresa:</label>
-                      <input type="text" name="address" value="">
-                    </div>
-                    <div class="form-group">
-                      <label><span>* </span>Grad:</label>
-                      <input type="text" name="city" value="">
-                    </div>
-                    <div class="form-group">
-                      <label><span>* </span>Država:</label>
-                      <input type="text" name="country" value="">
-                    </div>
-                    <div class="form-group">
-                      <label><span>* </span>Telefon:</label>
-                      <input type="tel" name="phone" value="">
-                    </div>
-                    <div class="form-group">
-                      <label><span>* </span>Iznos koji doniraš (RSD):</label>
-                      <input type="number" name="amount" min="1" value="">
-                    </div>
-                    <div class="form-group">
-                      <label><span>* </span>Izaberi korisnika kome doniraš novac:</label>
-                      <select name="user">
-                        <option value="budi-human">Humanitarna fondacija Budi human - Aleksandar Šapić</option>
-                        <optgroup label="Pomoć za decu">
-                          <option value="zorica-dragojlovic">Zorica Dragojlović</option>
-                        </optgroup>
-                        <optgroup label="Pomoć za odrasle">
-                          <option value="darko-stojanovic">Darko Stojanović</option>
-                        </optgroup>
-                        <optgroup label="Pomoć za udruženja">
-                          <option value="disleksija">Prvo srpsko društvo za disleksiju</option>
-                        </optgroup>
-                        <optgroup label="Pomoć za ustanove">
-                        <option value="kbc-zemun">KBC Zemun</option>
-                        </optgroup>
-                        <optgroup label="Posebne akcije">
-                          <option value="sms-kilometar">SMS za kilometar</option>
-                        </optgroup>
-                      </select>
-                    </div>
-                    <div class="form-footer text-center">
-                      <div class="payment-links">
-                        <a href="#">
-                          <img src="img/master.gif" alt="">
-                        </a>
-                        <a href="#">
-                          <img src="img/visa.gif" alt="">
-                        </a>
-                      </div>
-                        <iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LfyYxUUAAAAALkR1yp0r-7xY_x7st3yQPDEuCwT&amp;co=aHR0cDovL3d3dy5idWRpaHVtYW4ucnM6ODA.&amp;hl=sr&amp;v=r20170315121834&amp;size=normal&amp;cb=vop0xf3wrpab" title="recaptcha виџет" scrolling="no" name="undefined" frameborder="0" height="78" width="304"></iframe>
-                      <div class="buttons">
-                        <button type="submit" class="text-uppercase">pošalji</button>
-                        <button type="reset" class="text-uppercase">poništi</button>
-                      </div>
-                    </div>
-                  </form>
+                    <form class="e-donate" data-toggle="validator" data-role="form">
+                        <div class="form-group has-feedback">
+                            <label><span>* </span>Donator(ime i prezime ili naziv firme):</label>
+                            <input type="text" name="name" value="" min-length="3" max-length="30" data-error="Molimo te popuni sva obavezna polja" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label><span>* </span>E-mail:</label>
+                            <input type="email" name="email" value="" min-length="3" max-length="30" data-error="Molimo te popuni sva obavezna polja" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label><span>* </span>Adresa:</label>
+                            <input type="text" name="address" value="" min-length="3" max-length="30" data-error="Molimo te popuni sva obavezna polja" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label><span>* </span>Grad:</label>
+                            <input type="text" name="city" value="" min-length="3" max-length="30" data-error="Molimo te popuni sva obavezna polja" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label><span>* </span>Država:</label>
+                            <input type="text" name="country" value="" min-length="3" max-length="30" data-error="Molimo te popuni sva obavezna polja" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label><span>* </span>Telefon:</label>
+                            <input type="tel" name="phone" value="" min-length="3" max-length="30" data-error="Molimo te popuni sva obavezna polja" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label><span>* </span>Iznos koji doniraš (RSD):</label>
+                            <input type="number" name="amount" min="1" value="" data-error="Molimo te popuni sva obavezna polja" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label><span>* </span>Izaberi korisnika kome doniraš novac:</label>
+                            <select name="user">
+                                <option value="budi-human">Humanitarna fondacija Budi human - Aleksandar Šapić</option>
+                                <optgroup label="Pomoć za decu">
+                                    <option value="zorica-dragojlovic">Zorica Dragojlović</option>
+                                </optgroup>
+                                <optgroup label="Pomoć za odrasle">
+                                    <option value="darko-stojanovic">Darko Stojanović</option>
+                                </optgroup>
+                                <optgroup label="Pomoć za udruženja">
+                                    <option value="disleksija">Prvo srpsko društvo za disleksiju</option>
+                                </optgroup>
+                                <optgroup label="Pomoć za ustanove">
+                                    <option value="kbc-zemun">KBC Zemun</option>
+                                </optgroup>
+                                <optgroup label="Posebne akcije">
+                                    <option value="sms-kilometar">SMS za kilometar</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-footer text-center">
+                            <div class="payment-links">
+                                <a href="#">
+                                    <img src="img/master.gif" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/visa.gif" alt="">
+                                </a>
+                            </div>
+                            <iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LfyYxUUAAAAALkR1yp0r-7xY_x7st3yQPDEuCwT&amp;co=aHR0cDovL3d3dy5idWRpaHVtYW4ucnM6ODA.&amp;hl=sr&amp;v=r20170315121834&amp;size=normal&amp;cb=vop0xf3wrpab" title="recaptcha виџет" scrolling="no" name="undefined" frameborder="0" height="78" width="304"></iframe>
+                            <div class="buttons">
+                                <button type="submit" class="text-uppercase">pošalji</button>
+                                <button type="reset" class="text-uppercase">poništi</button>
+                            </div>
+                        </div>
+                    </form>
                 </section>
             </div>
         </main>
         <footer style="background: #28a44a;">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <address>
-                  <h3>Radno vreme pon - pet 08 - 16h</h3>
-                  <p><span>Adresa:</span> Bul. Milutina Milankovića 120d, 11070 Novi Beograd</p>
-                  <p><span>Telefon:</span> 011/412-30-30</p>
-                  <p><span>E-mail adresa:</span> <a href="mailto:fondacija@budihuman.rs"> fondacija@budihuman.rs</a></p>
-                </address>
-                <div id="map"></div>
-              </div>  <!-- col -->
-              <div class="col-md-6 clearfix">
-                <article class="donation-info">
-                  <h3>Humanitarna fondacija "Budi human - Aleksandar Šapić"</h3>
-                  <div class="info-group">
-                    <p><span>Dinarski račun fondacije:</span> 160-403108-51</p>
-                    <p><span>Devizni račun fondacije:</span> 00-540-0000737.7</p>
-                    <p>IBAN broj RS35160005400000737782</p>
-                    <p><span>SMS broj:</span> 3030</p>
-                  </div>
-                  <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-                </article>
-                <nav class="footer-nav">
-                  <ul class="list-inline">
-                    <li>
-                        <a href="#">Deca</a>
-                        <a href="#">Odrasli</a>
-                        <a href="#">Udruženja</a>
-                        <a href="#">Ustanove</a>
-                        <a href="#">Donacije</a>
-                    </li>
-                    <li>
-                        <a href="#">Kako da pomognem?</a>
-                        <a href="#">Kako da postanem korisnik?</a>
-                        <a href="#">Pomogli smo</a>
-                        <a href="#">Način rada</a>
-                        <a href="#">Vesti</a>
-                    </li>
-                    <li>
-                        <a href="#">Potrebna vam je pomoć?</a>
-                        <a href="#">Drugi o nama</a>
-                        <a href="#">Reč osnivača</a>
-                        <a href="#">Dijaspora</a>
-                        <a href="#">Kontakt</a>
-                    </li>
-                  </ul>
-                </nav>
-                <img src="img/cards.png" alt="">
-              </div>
-            </div>  <!-- row -->
-          </div>
-          <div class="copyright" style="background: #1C7A35;">
             <div class="container">
-              <p>Budihuman.rs - Humanitarna fondacija "Budi human - Aleksandar Šapić" © 2014. Sva prava zadržana.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <address>
+                            <h3>Radno vreme pon - pet 08 - 16h</h3>
+                            <p><span>Adresa:</span> Bul. Milutina Milankovića 120d, 11070 Novi Beograd</p>
+                            <p><span>Telefon:</span> 011/412-30-30</p>
+                            <p><span>E-mail adresa:</span> <a href="mailto:fondacija@budihuman.rs"> fondacija@budihuman.rs</a></p>
+                        </address>
+                        <div id="map"></div>
+                    </div>  <!-- col -->
+                    <div class="col-md-6 clearfix">
+                        <article class="donation-info">
+                            <h3>Humanitarna fondacija "Budi human - Aleksandar Šapić"</h3>
+                            <div class="info-group">
+                                <p><span>Dinarski račun fondacije:</span> 160-403108-51</p>
+                                <p><span>Devizni račun fondacije:</span> 00-540-0000737.7</p>
+                                <p>IBAN broj RS35160005400000737782</p>
+                                <p><span>SMS broj:</span> 3030</p>
+                            </div>
+                            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                        </article>
+                        <nav class="footer-nav">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#">Deca</a>
+                                    <a href="#">Odrasli</a>
+                                    <a href="#">Udruženja</a>
+                                    <a href="#">Ustanove</a>
+                                    <a href="#">Donacije</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kako da pomognem?</a>
+                                    <a href="#">Kako da postanem korisnik?</a>
+                                    <a href="#">Pomogli smo</a>
+                                    <a href="#">Način rada</a>
+                                    <a href="#">Vesti</a>
+                                </li>
+                                <li>
+                                    <a href="#">Potrebna vam je pomoć?</a>
+                                    <a href="#">Drugi o nama</a>
+                                    <a href="#">Reč osnivača</a>
+                                    <a href="#">Dijaspora</a>
+                                    <a href="#">Kontakt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <img src="img/cards.png" alt="">
+                    </div>
+                </div>  <!-- row -->
             </div>
-          </div>
+            <div class="copyright" style="background: #1C7A35;">
+                <div class="container">
+                    <p>Budihuman.rs - Humanitarna fondacija "Budi human - Aleksandar Šapić" © 2014. Sva prava zadržana.</p>
+                </div>
+            </div>
         </footer>
         <!-- core js (google maps api) -->
         <script>
-          function initMap() {
-            var budihuman = {lat: 44.81309485, lng: 20.41284442};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 15,
-              center: budihuman
-            });
-            var marker = new google.maps.Marker({
-              position: budihuman,
-              map: map
-            });
-          }
+            function initMap() {
+                var budihuman = {lat: 44.81309485, lng: 20.41284442};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: budihuman
+                });
+                var marker = new google.maps.Marker({
+                    position: budihuman,
+                    map: map
+                });
+            }
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4F1zDIhzA_yTroX-P21scgZ2DLG5TE0k&callback=initMap"></script>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- custom js -->
+        <script src="js/validator.min.js"></script>
+        <!-- core js -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.marquee.min.js"></script>
-        <script src="js/slippry.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

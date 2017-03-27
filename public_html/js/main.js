@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
     // marquee init
-    $('.marquee').marquee({
+    $(".marquee").marquee({
         duration: 15000,
         gap: 50,
         delayBeforeStart: 0,
-        direction: 'left',
+        direction: "left",
         duplicated: false
     });
 
@@ -21,9 +21,10 @@ $(document).ready(function() {
 
 
     });
+
     // index page modal
     if ($(".index-page").length > 0) {
-      $(".index-modal").modal("show");
+        $(".index-modal").modal("show");
     }
 
     // counter bar counter splitting into digits
@@ -36,64 +37,80 @@ $(document).ready(function() {
     });
 
     // sliders
-    $(".children-slider").slippry({
-        pager: false,
-        transition: "horizontal",
-        auto: true,
-        autoHover: false
-    });
+    if ($(".children-slider").length > 0) {
+        $(".children-slider").slippry({
+            pager: false,
+            transition: "horizontal",
+            auto: true,
+            autoHover: false
+        });
+    }
 
-    $(".grownups-slider").slippry({
-        pager: false,
-        transition: "horizontal",
-        auto: true,
-        autoHover: false
-    });
+    if ($(".grownups-slider").length > 0) {
+        $(".grownups-slider").slippry({
+            pager: false,
+            transition: "horizontal",
+            auto: true,
+            autoHover: false
+        });
+    }
 
-    $(".funds-slider").slippry({
-        pager: false,
-        transition: "horizontal",
-        auto: true,
-        autoHover: false
-    });
+    if ($(".funds-slider").length > 0) {
+        $(".funds-slider").slippry({
+            pager: false,
+            transition: "horizontal",
+            auto: true,
+            autoHover: false
+        });
+    }
 
-    $(".hospitals-slider").slippry({
-        pager: false,
-        transition: "horizontal",
-        auto: true,
-        autoHover: false
-    });
+    if ($(".hospitals-slider").length > 0) {
+        $(".hospitals-slider").slippry({
+            pager: false,
+            transition: "horizontal",
+            auto: true,
+            autoHover: false
+        });
+    }
 
-    $(".specials-slider").slippry({
-        pager: false,
-        transition: "horizontal",
-        auto: true,
-        autoHover: false
-    });
+    if ($(".specials-slider").length > 0) {
+        $(".specials-slider").slippry({
+            pager: false,
+            transition: "horizontal",
+            auto: true,
+            autoHover: false
+        });
+    }
 
-    $(".ambassadors-slider").slippry({
-        pager: false,
-        transition: "horizontal",
-        auto: true,
-        autoHover: false,
-        controls: false
-    });
+    if ($(".ambassadors-slider").length > 0) {
+        $(".ambassadors-slider").slippry({
+            pager: false,
+            transition: "horizontal",
+            auto: true,
+            autoHover: false,
+            controls: false
+        });
+    }
 
-    $(".twitter-ambassadors-slider").slippry({
-        pager: false,
-        transition: "horizontal",
-        auto: true,
-        autoHover: false,
-        controls: false
-    });
+    if ($(".twitter-ambassadors-slider").length > 0) {
+        $(".twitter-ambassadors-slider").slippry({
+            pager: false,
+            transition: "horizontal",
+            auto: true,
+            autoHover: false,
+            controls: false
+        });
+    }
 
-    $(".news-slider").slippry({
-        pager: false,
-        transition: "horizontal",
-        auto: true,
-        autoHover: false,
-        controls: true
-    });
+    if ($(".news-slider").length > 0) {
+        $(".news-slider").slippry({
+            pager: false,
+            transition: "horizontal",
+            auto: true,
+            autoHover: false,
+            controls: true
+        });
+    }
 
     // thermometer
     function thermometer(location) {
@@ -108,19 +125,19 @@ $(document).ready(function() {
         var progress = (value / (max - min)) * 100;
 
         if (location.parent().is(".fundraiser")) {
-          location.find(".progress-bar").css("width", progress + "%");
-          location.find(".progress-bar + span").css("left", (progress * 0.96) + "%");
-          location.parent().find(".missing > .number-output").text(thousandSeparator(missing) + " din");
+            location.find(".progress-bar").css("width", progress + "%");
+            location.find(".progress-bar + span").css("left", (progress * 0.96) + "%");
+            location.parent().find(".missing > .number-output").text(thousandSeparator(missing) + " din");
         }
 
         if (location.parent().is(".user-fundraiser")) {
-          var currentOffset = $(".thermometer-body").height() * (progress * 0.97)/100 - 61;
-          var progressOffset = $(".thermometer-body").height() * progress/100 + 4;
+            var currentOffset = $(".thermometer-body").height() * (progress * 0.97) / 100 - 61;
+            var progressOffset = $(".thermometer-body").height() * progress / 100 + 4;
 
-          location.find(".progress-bar").css("height", progressOffset + "px");
-          location.find(".thermometer-measurer").css("bottom", (progress * 0.97) + "%");
-          location.find(".current").css("bottom", currentOffset + "px");
-          location.parent().find(".missing > .number-output").text("-" + thousandSeparator(missing) + " din");
+            location.find(".progress-bar").css("height", progressOffset + "px");
+            location.find(".thermometer-measurer").css("bottom", (progress * 0.97) + "%");
+            location.find(".current").css("bottom", currentOffset + "px");
+            location.parent().find(".missing > .number-output").text("-" + thousandSeparator(missing) + " din");
         }
 
         location.parent().find(".current > .number-output").text(thousandSeparator(value) + " din");
@@ -128,10 +145,10 @@ $(document).ready(function() {
     }
 
     if ($(".fundraiser .thermometer").length > 0) {
-      thermometer($(".fundraiser .thermometer"));
+        thermometer($(".fundraiser .thermometer"));
     }
     if ($(".user-fundraiser .thermometer").length > 0) {
-      thermometer($(".user-fundraiser .thermometer"));
+        thermometer($(".user-fundraiser .thermometer"));
     }
 
 
@@ -141,17 +158,6 @@ $(document).ready(function() {
         var result = number.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
         return result;
     }
-
-    // table numbers display
-    function tableDisplay() {
-
-        $(".table-input").each(function(input) {
-            var output = parseFloat($(this).text()).toFixed(2);
-            $(this).next().text(thousandSeparator(output) + " din");
-
-        });
-    }
-    tableDisplay();
 
     // handle terrible picture sizes in news-slider
     function fixAspectRatio() {
@@ -164,39 +170,41 @@ $(document).ready(function() {
     }
     fixAspectRatio();
 
-    // child donations display
-    function usersDonationDisplay() {
-        $(".users-donation .donation-input").each(function(input) {
+    // numbers display
+    function numberDisplay() {
+
+        $(".number-input").each(function(input) {
             var output = parseFloat($(this).text()).toFixed(2);
             $(this).next().text(thousandSeparator(output) + " din");
 
         });
     }
-    usersDonationDisplay();
+    numberDisplay();
 
-    // news pages to top button showing on scroll
+
+    // news pages to-top button showing on scroll
     if ($(".news-pages").length > 0) {
 
-      $(document).scroll(function() {
+        $(document).scroll(function() {
 
-        var scrollDistance = $(document).scrollTop();
-        if (scrollDistance > 1000) {
-          $(".to-top").fadeIn();
-        } else {
-          $(".to-top").fadeOut();
-        }
+            var scrollDistance = $(document).scrollTop();
+            if (scrollDistance > 1000) {
+                $(".to-top").fadeIn();
+            } else {
+                $(".to-top").fadeOut();
+            }
 
-      });
+        });
 
     }
 
     // smooth scroll to top
     $(".to-top").click(function(e) {
-      e.preventDefault();
+        e.preventDefault();
 
-      $("html, body").animate({
-          scrollTop: 0
-      }, 800);
+        $("html, body").animate({
+            scrollTop: 0
+        }, 800);
 
     });
 
