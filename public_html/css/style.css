@@ -5,7 +5,13 @@
 a:hover {
     text-decoration: none;
 }
-
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
 input:focus, select:focus {
     outline: none;
 }
@@ -1004,11 +1010,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .info-feed .twitter-ambassadors div.sy-box {
-    height: 74px;
+    height: 74px; /* firefox bug fix, sometimes height changes in firefox */
 }
 
 .info-feed .our-ambassadors div.sy-box {
-    height: 70px;
+    height: 70px; /* firefox bug fix, sometimes height changes in firefox */
 }
 
 .info-feed .twitter-ambassadors h2 a {
@@ -1193,7 +1199,7 @@ footer {
     padding: 30px 0 0;
 }
 
-footer address {
+footer .footer-address {
     position: relative;
     text-align: center;
 }
@@ -1342,6 +1348,17 @@ footer .copyright p {
 
 .users-header form select {
     width: 180px;
+    background-color: transparent;
+    border: solid 1px #d1d1d1;
+    -moz-box-shadow: inset 1px 2px 4px #e7e7e7;
+    -webkit-box-shadow: inset 1px 2px 4px #e7e7e7;
+    box-shadow: inset 1px 2px 4px #e7e7e7;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    height: 28px;
+    cursor: pointer;
+    padding: 0 10px;
+    background: url(assets/select-icon.png) 95% center no-repeat;
 }
 
 
@@ -2215,9 +2232,10 @@ footer .copyright p {
     height: 28px;
     width: 286px;
     cursor: pointer;
-    padding: 0 10px;
+    padding: 0 35px 0 10px;
     color: #8c9299;
     max-width: 100%;
+    background: url(assets/select-icon.png) 97% center no-repeat;
 }
 
 .e-donate select optgroup {

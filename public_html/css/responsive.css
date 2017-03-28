@@ -519,11 +519,12 @@
         width: 25%;
     }
     /* ---- footer styles ---- */
-    footer address {
+    footer .footer-address  {
         text-align: left;
     }
     footer h3 {
         width: 100%;
+        font-size: 16px;
     }
     footer .donation-info {
         text-align: right;
@@ -690,7 +691,8 @@
     }
     /* ---- footer styles ---- */
     footer h3 {
-        width: 85%;
+        width: 86%;
+        font-size: 18px;
     }
     /* ---- users header styles ---- */
     /* ---- users article styles ---- */
