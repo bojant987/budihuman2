@@ -1359,6 +1359,7 @@ footer .copyright p {
     cursor: pointer;
     padding: 0 10px;
     background: url(assets/select-icon.png) 95% center no-repeat;
+    background-size: 18px 14.7px;
 }
 
 
@@ -2236,6 +2237,7 @@ footer .copyright p {
     color: #8c9299;
     max-width: 100%;
     background: url(assets/select-icon.png) 97% center no-repeat;
+    background-size: 18px 14.7px;
 }
 
 .e-donate select optgroup {
